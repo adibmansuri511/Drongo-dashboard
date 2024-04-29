@@ -1,0 +1,185 @@
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+aside {
+    width: 16%;
+    height: 100%;
+    position: fixed;
+}
+
+.bg-sidebar {
+    background-color: #fafaf8;
+}
+
+.thm-text-color {
+    color: #d16736;
+}
+
+.thm-bg {
+    background-color: #d16736;
+}
+
+.hr-line {
+    margin-left: -100%;
+    margin-right: -9%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #d16736;
+    color: #ffffff;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.icon-color {
+    color: #7e7b7b;
+}
+
+.sidebar-fs-fw {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+a.help-box {
+    background-color: #f6f6f4;
+    border: none;
+    border-radius: 8px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: .5rem 1rem;
+}
+
+.user-profile {}
+
+.user-profile .user-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #f1f1ef;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #7e7b7b;
+}
+
+.user-profile .user-credential {}
+
+.user-profile .user-credential .user-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.user-profile .user-credential .user-email {
+    font-size: 0.6rem;
+}
+
+main {
+    width: 84%;
+    /* height: 100%; */
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.export-btn {
+    cursor: pointer;
+    background-color: #d16736;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+}
+
+.create-new-invoice-btn {
+    cursor: pointer;
+    background-color: #d16736;
+    color: #ffffff;
+    border: 1px solid #d16736;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 175px;
+    height: 80px;
+    border: 1.8px solid #d16736;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 0.5rem 0.5rem;
+}
+
+.card:hover {
+    background-color: #feefea;
+    border: 2px solid #d16736;
+}
+
+.active-card {
+    background-color: #feefea;
+    border: 2px solid #d16736;
+}
+
+.card .card-title {
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card .card-price {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.card .icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    /* background-color: #bea7a7; */
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    margin-right: 6px;
+    cursor: pointer;
+}
