@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRONGO</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="d-flex flex-column flex-shrink-0 p-3 bg-sidebar">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <div class="logo">D</div>
+            <span class="logo-text">DRONGO</span>
+        </a>
+
+        <div class="border-top hr-line mt-3 mb-3"></div>
+        <!-- <hr> -->
+
+        <ul class="nav nav-pills flex-column mb-auto sidebar-fs-fw">
+            <li class="nav-item">
+                <a href="#" class="nav-link link-dark" aria-current="page">
+                    <i class="fas fa-home icon-color me-2"></i>
+                    Home
+                </a>
+            </li>
+            <li class="mb-4">
+                <a href="#" class="nav-link link-dark">
+                    <i class="fas fa-cog icon-color me-2"></i>
+                    Settings
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link link-dark">
+                    <i class="fa-solid fa-arrow-right-arrow-left icon-color me-2"></i>
+                    Transactions
+                </a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#" class="nav-link link-dark dropdown-toggle" role="button" id="customer-invoicing"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-file-lines icon-color me-2"></i>
+                        Customer invoicing
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="customer-invoicing">
+                        <li><a class="dropdown-item" href="#">Invoices</a></li>
+                        <li><a class="dropdown-item" href="#">Customers</a></li>
+                        <li><a class="dropdown-item" href="#">Products</a></li>
+                        <li><a class="dropdown-item" href="#">Quotes</a></li>
+                        <li><a class="dropdown-item" href="#">Subscriptions</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#" class="nav-link link-dark dropdown-toggle" role="button" id="account-pro"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="far fa-user icon-color me-2"></i>
+                        Account pro
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="account-pro">
+                        <li><a class="dropdown-item" href="#">Invoices</a></li>
+                        <li><a class="dropdown-item" href="#">Customers</a></li>
+                        <li><a class="dropdown-item" href="#">Products</a></li>
+                        <li><a class="dropdown-item" href="#">Quotes</a></li>
+                        <li><a class="dropdown-item" href="#">Subscriptions</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#" class="nav-link link-dark dropdown-toggle" role="button" id="spend-management"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="far fa-dollar-sign icon-color me-2"></i>
+                        Spend management
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="spend-management">
+                        <li><a class="dropdown-item" href="#">Invoices</a></li>
+                        <li><a class="dropdown-item" href="#">Customers</a></li>
+                        <li><a class="dropdown-item" href="#">Products</a></li>
+                        <li><a class="dropdown-item" href="#">Quotes</a></li>
+                        <li><a class="dropdown-item" href="#">Subscriptions</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#" class="nav-link link-dark dropdown-toggle" role="button" id="accounting"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-calculator icon-color me-2"></i>
+                        Accounting
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="accounting">
+                        <li><a class="dropdown-item" href="#">Invoices</a></li>
+                        <li><a class="dropdown-item" href="#">Customers</a></li>
+                        <li><a class="dropdown-item" href="#">Products</a></li>
+                        <li><a class="dropdown-item" href="#">Quotes</a></li>
+                        <li><a class="dropdown-item" href="#">Subscriptions</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <a href="#" class="help-box">
+            <i class="far fa-question-circle fa-2x icon-color me-2"></i>
+            <div>
+                <div class="text-dark">Having Troubles?</div>
+                <div class="thm-text-color">Help for you</div>
+            </div>
+        </a>
+
+        <div class="border-top hr-line mt-3 mb-3"></div>
+        <!-- <hr> -->
+
+        <div class="user-profile d-flex align-items-center">
+            <div class="user-img">AR</div>
+            <div class="user-credential">
+                <div class="user-name">A. Raiyani</div>
+                <div class="user-email">aminraiyani@gmail.com</div>
+            </div>
+            <i class="fa-solid fa-arrow-right-from-bracket fa-sm icon-color ms-3"></i>
+        </div>
+        <!-- <div class="dropdown">
+            <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
+                id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>mdo</strong>
+            </a>
+            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+        </div> -->
+    </aside>
+
+    <main class="">
+        <div class="container-fluid d-flex flex-column flex-shrink-0 py-3 px-3">
+            <section class="row align-items-center justify-content-between mb-2">
+                <div class="col-md-4 title">Invoices</div>
+                <div class="col-md-4 d-flex justify-content-end">
+                    <button type="button" class="export-btn me-1">
+                        <i class="fa-solid fa-up-right-from-square me-2"></i>
+                        Export
+                    </button>
+                    <button type="button" class="create-new-invoice-btn ms-1">
+                        <i class="fa-solid fa-plus me-2"></i>
+                        Create new invoice
+                    </button>
+                </div>
+            </section>
+
+            <section class="row align-items-center my-3">
+                <div class="col-md-2">
+                    <div class="card active-card">
+                        <div>
+                            <div class="card-title">All invoices<span style="color: #d16736;"> (8)</span></div>
+                            <div class="card-price">€222.00</div>
+                        </div>
+                        <div class="icon-box">
+                            <i class="fa-regular fa-folder"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <div>
+                            <div class="card-title">Drafts<span style="color: #d16736;"> (1)</span></div>
+                            <div class="card-price">€110.00</div>
+                        </div>
+                        <div class="icon-box">
+                            <i class="fa-solid fa-file-circle-minus" style="color: #959595;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <div>
+                            <div class="card-title">Open invoices<span style="color: #d16736;"> (0)</span></div>
+                            <div class="card-price">€0.00</div>
+                        </div>
+                        <div class="icon-box">
+                            <i class="fa-regular fa-file-lines" style="color: #946da2;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <div>
+                            <div class="card-title">Overdue<span style="color: #d16736;"> (1)</span></div>
+                            <div class="card-price">€110.00</div>
+                        </div>
+                        <div class="icon-box">
+                            <i class="fa-solid fa-calendar-day" style="color: #a65a58;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <div>
+                            <div class="card-title">Paid<span style="color: #d16736;"> (0)</span></div>
+                            <div class="card-price">€0.00</div>
+                        </div>
+                        <div class="icon-box">
+                            <i class="fa-solid fa-file-circle-check" style="color: #759f79;"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row align-items-center justify-content-between mb-2">
+                <div class="col-md-4 title">Invoices</div>
+                <div class="col-md-4 d-flex justify-content-end">
+                    <button type="button" class="export-btn me-1">
+                        <i class="fa-solid fa-up-right-from-square me-2"></i>
+                        Export
+                    </button>
+                    <button type="button" class="create-new-invoice-btn ms-1">
+                        <i class="fa-solid fa-plus me-2"></i>
+                        Create new invoice
+                    </button>
+                </div>
+            </section>
+
+            <section>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ratione numquam repellat, quo
+                molestias
+                quam rerum nihil rem officiis minus perferendis sed. Quisquam quod hic ab facere, soluta voluptatum
+                cumque
+                tenetur aspernatur repudiandae ipsam consequatur laborum eius. Animi, dicta. Pariatur distinctio
+                similique
+                rerum
+                sequi. Molestias minus fuga animi, obcaecati, ipsum dolorum dolores iure harum atque recusandae
+                exercitationem
+                hic voluptates voluptas vero ducimus architecto voluptatibus maiores quo, aperiam tempora facilis eaque.
+                Suscipit, ad quae! Maxime dolor placeat quos magni provident tempore consectetur deleniti distinctio,
+                harum
+                incidunt quia quasi molestiae praesentium dolorem possimus fuga esse itaque assumenda non fugit rem
+                quam.
+                Quia,
+                sunt fugiat porro quos doloribus tempora velit debitis architecto excepturi. Illo quidem sequi repellat
+                nemo
+                velit omnis? Amet adipisci maxime sint debitis aliquid, quod sed, suscipit officia commodi esse rem
+                ratione
+                voluptatum dicta provident mollitia culpa ad eaque sit ex! Asperiores in fuga quos saepe dignissimos
+                tempore
+                illum sit deleniti adipisci magni id perferendis nostrum sequi facere ut, beatae sapiente. Temporibus
+                ipsa
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ratione numquam repellat, quo
+                molestias
+                quam rerum nihil rem officiis minus perferendis sed. Quisquam quod hic ab facere, soluta voluptatum
+                cumque
+                tenetur aspernatur repudiandae ipsam consequatur laborum eius. Animi, dicta. Pariatur distinctio
+                similique
+                rerum
+                sequi. Molestias minus fuga animi, obcaecati, ipsum dolorum dolores iure harum atque recusandae
+                exercitationem
+                hic voluptates voluptas vero ducimus architecto voluptatibus maiores quo, aperiam tempora facilis eaque.
+                Suscipit, ad quae! Maxime dolor placeat quos magni provident tempore consectetur deleniti distinctio,
+                harum
+                incidunt quia quasi molestiae praesentium dolorem possimus fuga esse itaque assumenda non fugit rem
+                quam.
+                Quia,
+                sunt fugiat porro quos doloribus tempora velit debitis architecto excepturi. Illo quidem sequi repellat
+                nemo
+                velit omnis? Amet adipisci maxime sint debitis aliquid, quod sed, suscipit officia commodi esse rem
+                ratione
+                voluptatum dicta provident mollitia culpa ad eaque sit ex! Asperiores in fuga quos saepe dignissimos
+                tempore
+                illum sit deleniti adipisci magni id perferendis nostrum sequi facere ut, beatae sapiente. Temporibus
+                ipsa
+            </section>
+
+            <section class="row">
+                <div class="col-md-4">Adib</div>
+                <div class="col-md-4">Adib</div>
+                <div class="col-md-8">Adib</div>
+                <div class="col-md-6">Adib</div>
+                <div class="col-md-12">Adib</div>
+            </section>
+        </div>
+    </main>
+
+    <!-- <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+        <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+            <svg class="bi me-2" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-5 fw-semibold">Collapsible</span>
+        </a>
+        <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#home-collapse" aria-expanded="false">
+                    Home
+                </button>
+                <div class="collapse" id="home-collapse" style="">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">Overview</a></li>
+                        <li><a href="#" class="link-dark rounded">Updates</a></li>
+                        <li><a href="#" class="link-dark rounded">Reports</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#dashboard-collapse" aria-expanded="false">
+                    Dashboard
+                </button>
+                <div class="collapse" id="dashboard-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">Overview</a></li>
+                        <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                        <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                        <li><a href="#" class="link-dark rounded">Annually</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#orders-collapse" aria-expanded="false">
+                    Orders
+                </button>
+                <div class="collapse" id="orders-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">New</a></li>
+                        <li><a href="#" class="link-dark rounded">Processed</a></li>
+                        <li><a href="#" class="link-dark rounded">Shipped</a></li>
+                        <li><a href="#" class="link-dark rounded">Returned</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="border-top my-3"></li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#account-collapse" aria-expanded="false">
+                    Account
+                </button>
+                <div class="collapse" id="account-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">New...</a></li>
+                        <li><a href="#" class="link-dark rounded">Profile</a></li>
+                        <li><a href="#" class="link-dark rounded">Settings</a></li>
+                        <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
